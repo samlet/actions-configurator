@@ -1,0 +1,25 @@
+version: '3.0'
+
+services:
+  # url: http://action_server:5055/webhook
+  actions:
+    image: rasa/rasa_core_sdk:0.12.1
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - "5057:5055"
+    command:
+      - start
+      - --actions
+      - actions.procs
+
+  forms:
+    image: rasa/rasa_core_sdk:0.12.1
+    volumes:
+      - ./forms:/app/actions
+    ports:
+      - "5056:5055"
+    command:
+      - start
+      - --actions
+      - actions.procs

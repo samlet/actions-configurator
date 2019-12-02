@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "event": "slot",
+      "timestamp": null,
+      "name": "concerts",
+      "value": [
+        {"artist": "Foo Fighters", "reviews": 4.5},
+        {"artist": "Katy Perry", "reviews": 5.0}
+      ]
+    }
+  ],
+  "responses": [
+    {"text": "Foo Fighters, Katy Perry"}
+  ]
+}
